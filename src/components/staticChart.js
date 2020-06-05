@@ -1,4 +1,5 @@
 import React from 'react';
+import {MyChart} from './dynamicChart.js';
 
 function StaticChart(props) {
     return (
@@ -23,7 +24,7 @@ function Graph(props) {
     return (
         <div>
             <h1>Graph</h1>
-            
+            <MyChart/>
         </div>
     );
 }
