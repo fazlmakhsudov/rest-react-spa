@@ -1,13 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Nav from './components/nav.js';
+import DynamicChart from './components/dynamicChart.js';
+import StaticChart from './components/staticChart.js';
+
 import './App.css';
-import { Chart } from 'react-charts'
+import { Chart, getSeries,  } from 'react-charts'
+
+
+
 
 function App() {
   return (
     <div>
-      <MyChart/>
-          </div>
+       <Nav />
+       <DynamicChart/>
+       <StaticChart/>
+    </div>
   );
 }
 
@@ -55,5 +63,7 @@ function MyChart() {
     </div>
   );
 }
+
+
 
 export default App;
