@@ -84,28 +84,41 @@ function MyTable(props) {
             <thead>
             <tr>
                 <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>Line 1</th>
+                <th>Line 2</th>
+                <th>Line 3</th>
             </tr>
             </thead>
             <tbody>
             <tr>
+                <td>0</td>
                 <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>4</td>
+                <td>5</td>
+                <td></td>
             </tr>
             <tr>
                 <td>3</td>
-                <td colSpan="2">Larry the Bird</td>
-                <td>@twitter</td>
+                <td>2</td>
+                <td>6</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>7</td>
+                <td>4</td>
+                <td></td>
             </tr>
             </tbody>
         </Table>
