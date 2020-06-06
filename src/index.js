@@ -10,21 +10,37 @@ const dynamicChart = {
     labels: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'],
     datasets: [
       {
-        label: 'level of thicness',
+        label: 'level of thickness',
         data: [32, 45, 12, 76, 69],
         backgroundColor: [
           'rgba(75, 100, 103, 0.6)'
+        ],
+        borderWidth: 4
+      },
+      {
+        label: 'level of lengh',
+        data: [11, 77, 44, 1, 56],
+        backgroundColor: [
+          'rgba(35, 11, 42, 0.6)'
+        ],
+        borderWidth: 4
+      },
+      {
+        label: 'level of lengh',
+        data: [1, 99, 3, 11, 77],
+        backgroundColor: [
+          'rgba(135, 211, 42, 0.5)'
         ],
         borderWidth: 4
       }
     ]
   },
   chartSetting: {
-    title: "Evanjeline",
+    title: "Dynamic chart",
     dimension: { height: '1000px', width: '1000px' },
     options: {
       responsive: true,
-      title: { text: 'Thicness Scale', display: true },
+      title: { text: 'Some Scale', display: true },
       scales: {
         yAxes: [
           {
