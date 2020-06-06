@@ -12,23 +12,22 @@ import {
 } from "react-router-dom";
 
 
-function App(props) {
+export default function App(props) {
+  let chartData = props.dynamicChart.chartData;
+  let chartSetting = props.dynamicChart.chartSetting;
   return (
     <Container>
       <Navigation />
       <Router>
         <Switch>
-          <Route path="/dynamic-chart">
-            <DynamicChart />
-          </Route>
           <Route path="/static-chart">
             <StaticChart />
           </Route>
-          <Route default component={DynamicChart} />
+          <Route default component={() =>
+            <DynamicChart chartData={chartData} chartSetting={chartSetting} />
+          } />
         </Switch>
       </Router>
     </Container>
   );
-}
-
-export default App;
+};

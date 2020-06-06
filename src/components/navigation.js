@@ -3,12 +3,12 @@ import logo from '../media/logo.jpg';
 import { Nav, Row, Col, Image, } from 'react-bootstrap';
 
 
-function Navigation(props) {
+export default function Navigation() {
     return (
         <div>
             <Row>
                 <Col xs={1} md={1}>
-                    <Image src={logo} width={320} height={80} rounded />
+                    <Image src={logo} width={320} height={64} rounded />
                 </Col>
             </Row>
             <Nav variant="tabs">
@@ -22,5 +22,3 @@ function Navigation(props) {
         </div>
     );
 }
-
-export default Navigation;
