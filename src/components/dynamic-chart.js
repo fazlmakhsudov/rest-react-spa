@@ -1,4 +1,4 @@
-import React, { useState,} from 'react';
+import React from 'react';
 import { Line, } from 'react-chartjs-2';
 import { Row, Col, Image, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import singleUpArrow from '../media/single-up-arrow.jpg';
@@ -11,7 +11,7 @@ export default function DynamicChart(props) {
   return (
     <Row>
       <h1>{chartSetting.title}</h1>
-      <Col xs={11} md={11} style={chartSetting.dimension}>
+      <Col xs={11} md={11}>
         <Line data={chartData} options={chartSetting.options} />
       </Col>
       <Col xs={1} md={1} style={chartSetting.dimension}>

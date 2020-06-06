@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-const dynamicChart = {
+var charts = {
   chartData: {
     labels: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'],
     datasets: [
@@ -26,7 +26,7 @@ const dynamicChart = {
         borderWidth: 4
       },
       {
-        label: 'level of lengh',
+        label: 'level of width',
         data: [1, 99, 3, 11, 77],
         backgroundColor: [
           'rgba(135, 211, 42, 0.5)'
@@ -37,7 +37,6 @@ const dynamicChart = {
   },
   chartSetting: {
     title: "Dynamic chart",
-    dimension: { height: '1000px', width: '1000px' },
     options: {
       responsive: true,
       title: { text: 'Some Scale', display: true },
@@ -64,7 +63,7 @@ const dynamicChart = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App dynamicChart={dynamicChart} />
+    <App charts={charts} />
   </React.StrictMode>,
   document.getElementById('root')
 );
