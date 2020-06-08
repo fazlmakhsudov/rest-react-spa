@@ -1,7 +1,7 @@
 import React from 'react';
-import Navigation from './components/navigation.js';
+import Navigation from './components/static/navigation.js';
 import DynamicChart from './components/dynamic-chart.js';
-import StaticChart from './components/static-chart.js';
+import StaticChart from './components/static/static-chart.js';
 import {Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';

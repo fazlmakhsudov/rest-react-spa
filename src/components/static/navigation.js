@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo.jpg';
+import logo from '../../logo.jpg';
 import {Nav, Row, Col, Image,} from 'react-bootstrap';
 
 function Navigation(props) {
