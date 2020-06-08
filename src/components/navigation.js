@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.jpg';
+import logo from '../logo.jpg';
 import {Nav, Row, Col, Image,} from 'react-bootstrap';
 
 function Navigation(props) {
@@ -10,7 +10,7 @@ function Navigation(props) {
                 <Image src={logo}  width={320} height={80} rounded />
                 </Col>
             </Row>
-            <Nav variant="tabs" defaultActiveKey="/home">
+            <Nav variant="tabs" defaultActiveKey="/dynamic-chart">
                 <Nav.Item>
                     <Nav.Link href="/dynamic-chart">Dynamic chart</Nav.Link>
                 </Nav.Item>

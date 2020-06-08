@@ -1,15 +1,14 @@
 import React from 'react';
-import Navigation from './components/nav.js';
-import DynamicChart from './components/dynamicChart.js';
-import StaticChart from './components/staticChart.js';
+import Navigation from './components/navigation.js';
+import DynamicChart from './components/dynamic-chart.js';
+import StaticChart from './components/static-chart.js';
 import {Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
