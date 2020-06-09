@@ -3,9 +3,9 @@ import MyToggleButtons from "./my-toggle-buttons";
 
 function SearchForm(props) {
     return (
-        <div style={{paddingTop: "1%", width: "45%"}}>
+        <div style={{paddingTop: "1%"}}>
             <input type='date'/>
-            <MyToggleButtons style={{width: "300px"}}/>
+            <MyToggleButtons/>
         </div>
     );
 }

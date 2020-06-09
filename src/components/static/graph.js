@@ -26,12 +26,10 @@ function Graph() {
     )
 
     const lineChart = (
-        // A react-chart hyper-responsively and continuously fills the available
-        // space of its parent element automatically
         <div
             style={{
-                width: '400px',
-                height: '300px'
+                width: '1024px',
+                height: '600px'
             }}
         >
             <Chart data={data1} axes={axes} />
