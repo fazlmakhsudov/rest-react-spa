@@ -13,8 +13,8 @@ import {
 
 
 export default function App(props) {
-  let chartData = props.dynamicChart.chartData;
-  let chartSetting = props.dynamicChart.chartSetting;
+  let chartData = {};
+  let chartSetting = {};
   return (
     <Container>
       <Navigation />
