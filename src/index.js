@@ -39,7 +39,7 @@ var charts = {
     title: "Dynamic chart",
     options: {
       responsive: true,
-      title: { text: 'Some Scale', display: true },
+      title: { text: 'Ukraine Covid statistic', display: true },
       scales: {
         yAxes: [
           {
@@ -63,7 +63,7 @@ var charts = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App charts={charts} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

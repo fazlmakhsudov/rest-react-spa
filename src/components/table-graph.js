@@ -8,19 +8,17 @@ export default function TableGraph(props) {
         <Table className='mt-5 w-75' size='sm' striped bordered hover>
             <thead>
                 <tr>
-                    <th className='text-center aling-middle'>Name</th>
+                    <th className='w-25 text-center aling-middle'>Name</th>
                     <th className='text-center aling-middle'>Data</th>
-                    <th className='text-center aling-middle'>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                {chartData.datasets.map((dataset) =>
-                    <tr>
-                        <td className='pl-4'>{dataset.label}</td>
-                        <td className='pl-3'>{dataset.data.map((value) =>
-                            <span>{value}, </span>
+                {chartData.datasets.map((dataset,index) =>
+                    <tr key={index}>
+                        <td className='w-25 pl-4 aling-middle'>{dataset.label}</td>
+                        <td className='pl-3 aling-middle'>{dataset.data.map((value, index) =>
+                            <span key={index}>{value}, </span>
                         )}</td>
-                        <td className='pl-5'>***</td>
                     </tr>
                 )}
             </tbody>
