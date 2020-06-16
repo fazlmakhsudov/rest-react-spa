@@ -1,5 +1,5 @@
 import React from 'react';
-import { Line, } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import { Row, Col, } from 'react-bootstrap';
 
 export default function Graph(props) {

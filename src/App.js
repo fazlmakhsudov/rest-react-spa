@@ -13,15 +13,15 @@ import {
 
 
 export default function App(props) {
-  let chartData = props.charts.chartData;
-  let chartSetting = props.charts.chartSetting;
+  let chartData = {};
+  let chartSetting = {};
   return (
     <Container>
       <Navigation />
       <Router>
         <Switch>
           <Route path="/static-chart">
-            <StaticChart chartData={chartData} chartSetting={chartSetting}/>
+            <StaticChart />
           </Route>
           <Route default component={() =>
             <DynamicChart chartData={chartData} chartSetting={chartSetting} />
